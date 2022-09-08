@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/navigationMenu.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/toDoList.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <!--------------------------------SIDE MENU------------------------------------>
+    <nav id="navMenu" class="navigation">
+        <button id="menuToggle">←</button>
+        <h1 class="siteTitle">Dashboard</h1>
+        <ul class="options">
+            <a href="#" class="option selected">
+                <img src="../images/ToDoListIcon.png" alt="option icon" class="optionIcon"/>
+                ToDo List
+            </a>
+            <a href="timetable.html" class="option">
+                <img src="../images/TimetableIcon.png" alt="option icon" class="optionIcon"/>
+                Расписание
+            </a>
+            <a id="logout" class="option">
+                Выйти
+            </a>
+        </ul>
+        <h1 id="userName">Привет,</h1>
+    </nav>
+    <!--------------------------------MAIN PAGE------------------------------------>
+    <main class="pageContent">
+        <h1 class="pageTitle">To Do List</h1>
+        <div class="wrapper">
+            <input class="inp" id="input" placeholder="Введите текст"/>
+            <div class="tasks" id="tasks"></div>
+        </div>
+    </main>
+    <script src="../js/toToList.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

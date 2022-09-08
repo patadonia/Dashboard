@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <main class="pageContent">
+        <form class="form">
+            <h1 id="title">Регистрация</h1>
+            <input placeholder="Логин" id="login" class="standartInput"/>
+            <input placeholder="Имя" id="name" class="standartInput"/>
+            <select id="group">
+                <option value="1">ИС-11</option>
+                <option value="2">ИС-21</option>
+                <option value="3">ИС-31</option>
+                <option value="4">ИС-41</option>
+            </select>
+            <input placeholder="Пароль" id="password" class="standartInput"/>
+            <button id="submit" class="btn">Зарегистрироваться</button>
+            <button id="change" class="btn">Есть аккаунт? Войти</button>
+        </form>
+    </main> 
+    <div id="message" class="message hiddenMessage">Какая то ошибка</div>
+    <script src="js/server.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
